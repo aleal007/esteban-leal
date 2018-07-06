@@ -1,20 +1,174 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<body>
+    <header>
+        <div class="contenedor">
+            <nav class="menu">
+                <a href="#" id="btn-acerca-de">Quien Soy</a>
+                <a href="#" id="btn-menu">Música</a>
+                <a href="#" id="btn-galeria">Galeria</a>
+                <a href="#" id="btn-ubicacion">Reflexiones</a>
+                <a href="#" id="btn-contacto">Contacto</a>
+            </nav>
 
+            <div class="textos">
+                <h1 class="nombre">Esteban Leal <span></span></h1>
+                <h3>El Payador Cristiano</h3>
+            </div>
+        </div>
+    </header>
+
+    <section class="main">
+        <section class="acerca-de" id="acerca-de">
+            <div class="contenedor">
+                <div class="foto">
+                    <img src="assets/img/acerca_de2.jpg" alt="">
+                </div>
+                <article>
+                    <h3>Esteban Leal</h3>
+                    <p>Cantautor y compositor cristiano, nacido en Concepción, Chile. Mi misión es que más personas conoscan a Cristo, mediante la música y el mensaje de la palabra de Dios.
+                    </p>
+
+                    <p>"Por tanto, id, y haced discípulos a todas las naciones, bautizándolos en el nombre del Padre, y del Hijo, y del Espíritu Santo;", Mateo 28:19</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="menu">
+            <div class="contenedor">
+                <h3 class="titulo" id="platillos">Música</h3>
+                <div class="container">
+
+                    <h3>Canciones de Esteban Leal</h3>
+                    <hr>
+
+                    <div class="row">
+                        <div class="col-md-12">
+
+                            <div class="table-responsive">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th class="numeral">#</th>
+                                            <th class="foto">Foto</th>
+                                            <th class="cancion">Canción</th>
+                                            <th class="album">Album</th>
+                                            <th>Track</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="numeral"> 1 </td>
+                                            <td class="foto">
+                                                <img src="assets/img/acerca_de2.jpg" class="img-fluid img-50">
+                                            </td>
+                                            <td class="cancion">Oración de Jesús</td>
+                                            <td class="album">Última Semana</td>
+                                            <td>
+                                                <audio controls>
+					                <source src="assets/media/musica/Oracion de Jesús.mp3">
+					          </audio>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="numeral"> 2 </td>
+                                            <td class="foto">
+                                                <img src="assets/img/esteban/7.jpg" class="img-fluid img-50">
+                                            </td>
+                                            <td class="cancion">Hay que ser bueno con la viejita</td>
+                                            <td class="album">Vivencias</td>
+                                            <td>
+                                                <audio controls>
+					                <source src="assets/media/musica/Hay que ser bueno con la viejita.mp3">
+					          </audio>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="numeral"> 3 </td>
+                                            <td class="foto">
+                                                <img src="assets/img/esteban/7.jpg" class="img-fluid img-50">
+                                            </td>
+                                            <td class="cancion">Existe Dios</td>
+                                            <td class="album">Vivencias</td>
+                                            <td>
+                                                <audio controls>
+													<source src="assets/media/musica/Existe Dios.mp3">
+										</audio>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="galeria" id="galeria">
+            <div class="foto">
+                <img src="assets/img/esteban/1.jpg" alt="">
+            </div>
+            <div class="foto">
+                <img src="assets/img/esteban/2.jpg" alt="">
+            </div>
+            <div class="foto">
+                <img src="assets/img/esteban/3.jpg" alt="">
+            </div>
+            <div class="foto">
+                <img src="assets/img/esteban/4.jpg" alt="">
+            </div>
+            <div class="foto">
+                <img src="assets/img/esteban/5.jpg" alt="">
+            </div>
+            <div class="foto">
+                <img src="assets/img/esteban/6.jpg" alt="">
+            </div>
+            <div class="foto">
+                <img src="assets/img/esteban/7.jpg" alt="">
+            </div>
+            <div class="foto">
+                <img src="assets/img/esteban/8.jpg" alt="">
+            </div>
+        </section>
+
+        <section class="ubicacion" id="ubicacion">
+            <div class="contenedor">
+                <h3 class="titulo">Reflexiones</h3>
+                <div class="text-center">
+                    <img src="assets/img/biblia.jpg" class="img-fluid img-150">
+                </div>
+                <div class="text-center">
+                    <h3>¿Cree Ud. en los milagros? ¿Cuál fue su último milagro en su vida?</h3>
+                </div>
+                <br>
+                <div class="text-center">
+                    <audio controls>
+                <source src="assets/media/audio/reflexion.m4a">
+          </audio>
+                </div>
+            </div>
+        </section>
+
+    </section>
+
+    <footer>
+        <div class="contenedor" id="contacto">
+            <div class="copyright">
+                <div class="row">
+                    <div class="">
+                        <h4 class="titulo">Contacto</h4>
+                        <p class="calle">Si deseas agendar una presentación, contactarse a:<br /></p>
+                        <p class="calle">Esteban Leal <br /></p>
+                        <p class="correo">lealpuma@gmail.com </p>
+                        <p class="correo">+5698840593</p>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright desarrollowebmobile @ 2018</p>
+            </div>
+        </div>
+    </footer>
+</body>
