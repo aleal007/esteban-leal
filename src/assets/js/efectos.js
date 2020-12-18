@@ -30,6 +30,7 @@ $(document).ready(function(){
 		galeria = $('#galeria').offset().top,
 		ubicacion = $('#ubicacion').offset().top;
 		contacto = $('#contacto').offset().top;
+		entrevistas = $('#entrevistas').offset().top;
 
 	$('#btn-acerca-de').on('click', function(e){
 		e.preventDefault();
@@ -63,6 +64,13 @@ $(document).ready(function(){
 		e.preventDefault();
 		$('html, body').animate({
 			scrollTop: contacto
+		}, 500);
+	});
+
+	$('#btn-entrevistas').on('click', function(e){
+		e.preventDefault();
+		$('html, body').animate({
+			scrollTop: entrevistas
 		}, 500);
 	});
 
